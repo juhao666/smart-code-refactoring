@@ -1,0 +1,11 @@
+- name: set-java-version-to-17
+  description: Spring boot 3.0 Upgrade - Set java version property in build file
+  condition:
+    type: com.juhao666.smart.code.refactoring.models.conditions.TrueCondition
+  actions:
+    - type: com.juhao666.smart.code.refactoring.models.actions.SetPropertyAction
+      propertyName: "java.version"
+      propertyValue: "17"
+      description: Set Java version to 17
+      condition:
+        type: com.juhao666.smart.code.refactoring.models.conditions.TrueCondition

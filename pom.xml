@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.0</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.juhao666</groupId>
+    <artifactId>smart-code-refactoring</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.shell.starter.version>3.3.0</spring.shell.starter.version>
+        <rewrite.version>7.25.0</rewrite.version>
+        <rewrite.spring.version>5.9.0</rewrite.spring.version>
+        <snakeyaml.version>2.2</snakeyaml.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.shell</groupId>
+            <artifactId>spring-shell-starter</artifactId>
+            <version>${spring.shell.starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openrewrite</groupId>
+            <artifactId>rewrite-core</artifactId>
+            <version>${rewrite.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openrewrite</groupId>
+            <artifactId>rewrite-yaml</artifactId>
+            <version>${rewrite.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openrewrite.recipe</groupId>
+            <artifactId>rewrite-spring</artifactId>
+            <version>${rewrite.spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openrewrite</groupId>
+            <artifactId>rewrite-java</artifactId>
+            <version>${rewrite.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jline</groupId>
+            <artifactId>jline</artifactId>
+            <version>3.24.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openrewrite.recipe</groupId>
+            <artifactId>rewrite-migrate-java</artifactId>
+            <version>2.17.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
