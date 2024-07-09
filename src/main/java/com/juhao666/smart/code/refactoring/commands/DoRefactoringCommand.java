@@ -12,7 +12,7 @@ import org.springframework.shell.standard.ShellOption;
 import java.util.List;
 import java.util.Optional;
 
-@ShellComponent
+//@ShellComponent
 @Slf4j
 public class DoRefactoringCommand {
 
